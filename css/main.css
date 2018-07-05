@@ -944,28 +944,6 @@ a > [class*="rt-icon-"],
   bottom: 0;
 }
 
-/*page preloader*/
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ffffff;
-  z-index: 13000;
-  height: 100%;
-}
-
-.preloader_image {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background: url(../img/preloader.gif) no-repeat 50% 50% transparent;
-  margin: -40px 0 0 -40px;
-}
-
 /**light section*/
 .light_section {
   background-color: #ffffff;
