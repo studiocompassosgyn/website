@@ -1056,7 +1056,7 @@ a > [class*="rt-icon-"],
 .grey_section .progress {
   background-color: #ffffff;
 }
-.grey_section .testimonials-carousel {
+.grey_section {
   border: none;
 }
 .grey_section .widget_recent_entries li + li,
@@ -1218,9 +1218,7 @@ a > [class*="rt-icon-"],
   border-color: #8a96a2;
   color: #ffffff;
 }
-.darkgrey_section .testimonials-carousel {
-  border-color: #8a96a2;
-}
+
 .darkgrey_section .widget_recent_entries li + li,
 .darkgrey_section .widget_recent_comments li + li,
 .darkgrey_section .widget_archive li + li,
@@ -1495,9 +1493,6 @@ a > [class*="rt-icon-"],
 .dark_section .owl-theme .owl-controls .owl-buttons div {
   border-color: #343434;
   color: #ffffff;
-}
-.dark_section .testimonials-carousel {
-  border-color: #343434;
 }
 .dark_section .widget_recent_entries li + li,
 .dark_section .widget_recent_comments li + li,
@@ -1826,15 +1821,7 @@ a > [class*="rt-icon-"],
   border-color: #ffffff;
   color: #4c4c4c;
 }
-.color_section .testimonials-carousel {
-  border-color: #f68b69;
-}
-.color_section .testimonials-carousel .carousel-indicators li {
-  border-color: #ffffff;
-}
-.color_section .testimonials-carousel .carousel-indicators li.active {
-  background-color: #ffffff;
-}
+
 .color_section .widget_recent_entries li + li,
 .color_section .widget_recent_comments li + li,
 .color_section .widget_archive li + li,
@@ -2280,10 +2267,6 @@ aside .widget a:hover {
 
 #related-gallery-items-carousel {
   margin-top: 30px;
-}
-
-#testimonials {
-  background-image: url(../example/parallax/testimonials.jpg);
 }
 
 #skills {
@@ -3070,28 +3053,6 @@ widget_pages
 .teaser.with_counter p.counter {
   font-size: 50px;
   margin: 35px 0;
-}
-
-.testimonials-carousel {
-  border: 1px solid #e4e4e4;
-  padding: 0px 30px 40px;
-  border-radius: 5px;
-}
-.testimonials-carousel .carousel-indicators {
-  bottom: 10px;
-}
-.testimonials-carousel .carousel-control {
-  display: none;
-}
-.testimonials-carousel .media-object {
-  max-width: 80px;
-  margin-bottom: 10px;
-}
-.testimonials-carousel .carousel-indicators li {
-  border-color: #b31414;
-}
-.testimonials-carousel .carousel-indicators li.active {
-  background-color: #b31414;
 }
 
 /*thumbnail*/
@@ -5006,65 +4967,6 @@ a.section-more:hover {
     margin-top: 30px;
 }
 
-/*testimonials*/
-#testimonials-carousel h4 {
-  margin: 20px 0;
-  text-transform: uppercase;
-}
-
-#testimonials-carousel .owl-controls .owl-buttons div {
-  border: none;
-  position: absolute;
-  color: #ffffff;
-}
-
-#testimonials-carousel .owl-controls .owl-buttons .owl-prev {
-  left: -60px;
-  margin-top: -30px;
-  top: 50%;
-}
-
-#testimonials-carousel .owl-controls .owl-buttons .owl-next {
-  margin-top: -30px;
-  right: -40px;
-  top: 50%;
-}
-
-#testimonials-carousel .owl-controls .owl-buttons div:before {
-  font-size: 50px;
-}
-
-#testimonials-carousel .owl-controls .owl-buttons div:hover {
-  background: transparent;
-  color: #b31414;
-}
-
-@media (max-width: 550px) {
-  #testimonials-carousel .owl-controls .owl-buttons {
-    display: none;
-  }
-}
-/*fun facts*/
-.fan_facts .teaser_icon {
-  padding-top: 40px;
-}
-
-.fan_facts .teaser_icon i {
-  padding: 40px;
-  background: #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
-  color: #b31414;
-  font-size: 40px;
-}
-
-.fan_facts .teaser_description .counter {
-  color: #b31414;
-}
-
-.fan_facts .teaser_description h3 {
-  text-transform: uppercase;
-}
 
 /*team*/
 #team h4 {
