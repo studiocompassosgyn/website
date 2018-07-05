@@ -274,18 +274,6 @@ jQuery(window).load(function(){
 		}
 	});
 	
-	
-
-	//preloader
-	jQuery(".preloaderimg").fadeOut();
-	jQuery(".preloader").delay(200).fadeOut("slow").delay(200, function(){
-		jQuery(this).remove();
-	});
-
-	jQuery('body').delay(1000).scrollspy('refresh');
-
-
-	
 	//animation to elements on scroll
 	if (jQuery().appear) {
 		// jQuery('.to_animate').appear().css({opacity: 0});
