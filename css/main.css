@@ -4092,14 +4092,15 @@ html[xmlns] .slides {
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
   border-radius: 100%;
+  background-color: transparent;
 }
 
 .flex-control-paging li a:hover {
-  background-color: transparent;
+  background-color: white;
 }
 
 .flex-control-paging li a.flex-active {
-  background-color: transparent;
+  background-color: white;
 }
 
 .flex-control-thumbs {
@@ -4813,84 +4814,6 @@ isotope animations
   transition-duration: 0s;
 }
 
-/*switcher styles*/
-#switcher {
-  position: fixed;
-  padding: 0 10px 0 20px;
-  top: 30%;
-  left: -200px;
-  width: 200px;
-  height: 170px;
-  background-color: #ffffff;
-  z-index: 12500;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-
-#switcher.active {
-  left: 0;
-}
-
-#switcher span {
-  -webkit-box-shadow: 3px 0 5px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 3px 0 5px 0 rgba(0, 0, 0, 0.2);
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  color: #1a1a1a;
-  background-color: #ffffff;
-  text-align: center;
-  right: -50px;
-  top: 0;
-  cursor: pointer;
-}
-
-#switcher li {
-  margin-bottom: 10px;
-}
-
-#switcher p {
-  margin-top: -7px;
-}
-
-#switcher-version a {
-  padding: 6px 12px;
-  display: inline-block;
-  line-height: 1;
-}
-
-#switcher-version a.light, #switcher-version a.dark:hover {
-  background-color: #f1f1f1;
-  color: #1a1a1a;
-}
-
-#switcher-version a.dark, #switcher-version a.light:hover {
-  background-color: #6e7c8b;
-  color: #ffffff;
-}
-
-#switcher-colors a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #b31414;
-}
-
-#switcher-colors a.color2 {
-  background-color: #3598dc;
-}
-
-#switcher-colors a.color3 {
-  background-color: #854bb1;
-}
-
 /*mainslider*/
 .slide_description h2, .slide_description h4 {
   color: #ffffff;
@@ -4908,6 +4831,11 @@ isotope animations
 @media (max-width: 767px) {
   #mainslider {
     margin-top: -1px;
+  }
+
+  #logo {
+  box-sizing: border-box;
+  height: 125px;
   }
 
   #mainslider .slide_description_wrapper:before, #mainslider .slide_description {
