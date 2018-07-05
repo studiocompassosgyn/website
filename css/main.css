@@ -437,8 +437,8 @@ footer > .container > .row > [class*="col-"] {
 }
 
 #footer > .container {
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 #copyright > .container {
@@ -5914,9 +5914,18 @@ article.comment-body {
 
 /*footer*/
 #footer {
-  background: #263646 !important;
+  display: block;
+  color: #b31414;
+  background: white !important;
 }
-
+.text-center {
+  display: inline-flex;
+  justify-content: center;
+}
+.link-footer {
+  color: #b31414;
+  background-color: #ffffff;
+}
 /*copyright*/
 #copyright {
   background: #212f3d !important;
