@@ -4984,6 +4984,28 @@ a.section-more:hover {
   margin-top: 5px;
 }
 
+.img_resize {
+    display: block;
+    margin: auto;
+    height: 360px;
+    width: 567px;
+    margin-top: 30px;
+}
+
+.title_container_about {
+    margin: auto;
+    width: 500px;
+    height: 20px;
+    border-bottom: 3px solid #b31414;
+}
+
+.text_sobre_desc {
+    display: block;
+    margin: auto;
+    width: 400px;
+    margin-top: 30px;
+}
+
 /*testimonials*/
 #testimonials-carousel h4 {
   margin: 20px 0;
@@ -5075,6 +5097,14 @@ a.section-more:hover {
   border-bottom: 3px solid #b31414;
 }
 
+.to_animate_child_blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block {
+  width: 100%;
+}
 /*price*/
 .plan-name h4 {
   text-transform: uppercase;
@@ -5337,10 +5367,13 @@ a.section-more:hover {
 .banner {
   background-image: url(../example/banner-breadcrumbs.jpg);
   background-position: center center;
-  height: 275px;
+  height: 250px;
   position: relative;
 }
 
+.banner .row {
+  margin-top: 50px;
+}
 .hs-line {
   letter-spacing: 2px;
   color: #ffffff;
