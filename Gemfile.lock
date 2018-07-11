@@ -29,8 +29,6 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.10.0)
-      jekyll (~> 3.3)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
     jekyll-sass-converter (1.5.2)
@@ -70,9 +68,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-feed (~> 0.6)
   jekyll-gist
-  tzinfo-data
 
 BUNDLED WITH
    1.16.2
