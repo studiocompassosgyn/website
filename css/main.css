@@ -4512,59 +4512,6 @@ easy pie chart
   margin-top: 0;
 }
 
-/* 
-totop 
-*/
-#toTop {
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  position: fixed;
-  text-decoration: none;
-  z-index: 9999;
-  font-size: 0;
-  color: transparent;
-  background-color: #1a1a1a;
-  border-radius: 3px;
-}
-
-#toTop:after {
-  color: #ffffff;
-  content: '\e80f';
-  font-size: 25px;
-  line-height: 35px;
-  font-family: 'fontello';
-  text-align: center;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-
-#toTopHover, #toTop:hover {
-  background-color: #b31414;
-  bottom: 23px;
-  right: 20px;
-}
-
-#toTop:hover:after {
-  color: #ffffff;
-}
-
-#toTop:active, #toTop:focus {
-  outline: medium none;
-}
-
 /*
 isotope portfolio
 */

@@ -13,24 +13,24 @@ title: Horários
             <div class="row">
                 <div class="text-center filters col-sm-12">
                     <ul id="timetable_filter">
-                        <li><a class="selected" data-filter="all" href="#">Todas</a></li>
-                        <li><a data-filter=".Ballet" href="#" class="">Street Dance</a></li>
-                        <li><a data-filter=".Hip-Hop" href="#" class="">Dança de salão iniciado</a></li>
-                        <li><a data-filter=".Jazz" href="#" class="">Dança de salão iniciante</a></li>
-                        <li><a data-filter=".Latin" href="#" class="">Zouk iniciado</a></li>
-                        <li><a data-filter=".Ballet" href="#" class="">Zouk intermediário</a></li>
-                        <li><a data-filter=".Hip-Hop" href="#" class="">Zouk &amp; samba iniciante</a></li>
-                        <li><a data-filter=".Jazz" href="#" class="">Samba intermediário</a></li>
-                        <li><a data-filter=".Latin" href="#" class="">Samba &amp; bolero intermediário</a></li>
-                        <li><a data-filter=".Ballet" href="#" class="">Forró &amp; samba iniciante</a></li>
-                        <li><a data-filter=".Hip-Hop" href="#" class="">Forró &amp; sertanejo intermediário</a></li>
-                        <li><a data-filter=".Jazz" href="#" class="">Tango intermediário</a></li>
-                        <li><a data-filter=".Latin" href="#" class="">Salsa em linha iniciante</a></li>
-                        <li><a data-filter=".Ballet" href="#" class="">Salsa &amp; bachata iniciante</a></li>
-                        <li><a data-filter=".Hip-Hop" href="#" class="">Bachata iniciado</a></li>
-                        <li><a data-filter=".Jazz" href="#" class="">Ioga</a></li>
-                        <li><a data-filter=".Latin" href="#" class="">Zumba</a></li>
-                        <li><a data-filter=".Latin" href="#" class="">Ballet adulto</a></li>                  
+                        <li><a class="selected" data-filter="all" href="#" id="all_filters">Todas</a></li>
+                        <li><a data-filter=".street-dance" href="#" class="">Street Dance</a></li>
+                        <li><a data-filter=".danca-salao" href="#" class="">Dança de Salão Iniciado</a></li>
+                        <li><a data-filter=".danca-salao-int" href="#" class="">Dança de Salão Iniciante</a></li>
+                        <li><a data-filter=".zouk" href="#" class="">Zouk Iniciado</a></li>
+                        <li><a data-filter=".zouk-inter" href="#" class="">Zouk Intermediário</a></li>
+                        <li><a data-filter=".samba-zouk" href="#" class="">Zouk &amp; Samba Iniciante</a></li>
+                        <li><a data-filter=".samba-inter" href="#" class="">Samba Intermediário</a></li>
+                        <li><a data-filter=".samba-bole" href="#" class="">Samba &amp; Bolero Intermediário</a></li>
+                        <li><a data-filter=".forro-samba" href="#" class="">Forro &amp; Samba Iniciante</a></li>
+                        <li><a data-filter=".forro-sert-inter" href="#" class="">Forro &amp; Sertanejo Intermediário</a></li>
+                        <li><a data-filter=".tango-inter" href="#" class="">Tango Intermediário</a></li>
+                        <li><a data-filter=".salsa-linha" href="#" class="">Salsa em linha Iniciante</a></li>
+                        <li><a data-filter=".salsa-bachata" href="#" class="">Salsa &amp; Bachata Iniciante</a></li>
+                        <li><a data-filter=".bachata" href="#" class="">Bachata Iniciado</a></li>
+                        <li><a data-filter=".ioga" href="#" class="">Ioga</a></li>
+                        <li><a data-filter=".zumba" href="#" class="">Zumba</a></li>
+                        <li><a data-filter=".ballet-adulto" href="#" class="">Ballet Adulto</a></li>
                     </ul>
                     <div class="clearfix"></div>
                 </div>
@@ -38,7 +38,7 @@ title: Horários
             <div class="row">
                 <div class="col-sm-12">
                     <div class="table-responsive">
-                        <table class="table table-striped table-bordered timetable">
+                    <table class="table table-striped table-bordered timetable">
                         <thead>
                             <tr>
                                 <th></th>
@@ -50,172 +50,39 @@ title: Horários
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th>10h30</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="dança-de-salão" class="danca_salao_int">Dança de Salão Iniciante</a></td>
+                            {% for entry in site.data.schedule %}
+                                <tr>
+                                    <th>{{ entry.schedule }}</th>
 
-                            </tr>
+                                  {% for dance in entry.dances %}
+                                    
+                                        <td>
+                                            {% unless dance.name == null %}
+                                            <a href="{% unless dance.baseurl == '#' %}cursos/{% endunless %}{{ dance.baseurl }}" class="{{ dance.class }}">
+                                                {{ dance.name }}
+                                            </a>
+                                            {% endunless %}
+                                            {% if dance.name2 %}
+                                                <a href="{% unless dance.baseurl2 == '#' %}cursos/{% endunless %}{{ dance.baseurl2 }}" class="{{ dance.class2 }}">
+                                                {{ dance.name2 }}
+                                                </a>
+                                            {% endif %}
+                                            {% if dance.name3 %}
+                                                <a href="{% unless dance.baseurl3 == '#' %}cursos/{% endunless %}{{ dance.baseurl3 }}" class="{{ dance.class3 }}">
+                                                    {{ dance.name3 }}
+                                                </a>
+                                            {% endif %}
+                                            {% if dance.name4 %}
+                                                <a href="{% unless dance.baseurl4 == '#' %}cursos/{% endunless %}{{ dance.baseurl4 }}" class="{{ dance.class4 }}">
+                                                    {{ dance.name4 }}
+                                                </a>
+                                            {% endif %}
+                                        </td>
 
-                            <tr>
-                                <th>10h30</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="ballet-adulto" class="ballet_adulto">Ballet Adulto</a></td>
-
-                            </tr>
-
-                            <tr>
-                                <th>15h</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="#" class="ioga">Ioga</a></td>
-
-                            </tr>
-
-                            <tr>
-                                <th>16h30</th>
-
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="#" class="street_dance">Street Dance</a></td>
-
-                            </tr>
-
-                            <tr>
-                                <th>17h30</th>
-                                <td></td>
-                                <td><a href="#" class="ioga">Ioga</a></td>
-                                <td></td>
-                                <td><a href="#" class="ioga">Ioga</a></td>
-                                <td></td>
-
-                            </tr>
-
-                            <tr>
-                                <th>18h</th>
-                                <td></td>
-                                <td><a href="#" class="zumba">Zumba</a></td>
-                                <td></td>
-                                <td><a href="#" class="zumba">Zumba</a></td>
-                                <td></td>
-
-                            </tr>
-
-                            <tr>
-                                <th>19h</th>
-                                <td><a href="#" class="street_dance">Street Dance</a></td>
-                                <td><a href="#" class="ioga">Ioga</a></td>
-                                <td><a href="#" class="street_dance">Street Dance</a></td>
-                                <td><a href="#" class="ioga">Ioga</a></td>
-                                <td></td>
-
-                            </tr>
-
-                            <tr>
-                                <th>19h</th>
-                                <td><a href="dança-de-salão" class="danca_salao">Dança de Salão Iniciado</a></td>
-                                <td><a href="dança-de-salão" class="danca_salao_int">Dança de Salão Iniciante</a></td>
-                                <td><a href="dança-de-salão" class="danca_salao">Dança de Salão Iniciado</a></td>
-                                <td><a href="forro" class="forro_int">Forró Iniciante</a></td>
-                                <td></td>
-
-                            </tr>
-
-                            <tr>
-                                <th>19h</th>
-                                <td><a href="zouk" class="zouk">Zouk Iniciado</a></td>
-                                <td><a href="salsa" class="salsa_linha">Salsa em linha Iniciante</a></td>
-                                <td><a href="zouk" class="zouk">Zouk Iniciado</a></td>
-                                <td><a href="salsa" class="salsa_linha">Salsa em linha Iniciante</a></td>
-                                <td></td>
-
-                            </tr>
-
-                            <tr>
-                                <th>19h</th>
-                                <td><a href="salsa" class="salsa_bachata">Salsa &amp; Bachata Iniciante</a></td>
-                                <td><a href="dança-de-salão" class="danca_salao_int">Dança de Salão Iniciante</a></td>
-                                <td><a href="salsa" class="salsa_bachata">Salsa &amp; Bachata Iniciante</a></td>
-                                <td><a href="dança-de-salão" class="danca_salao_int">Dança de Salão Iniciante</a></td>
-                                <td></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <th>20h</th>
-                                <td><a href="dança-de-salão" class="danca_salao_int">Dança de Salão Iniciante</a></td>
-                                <td><a href="forro" class="forro_sert_inter">Forro &amp; Sertanejo Intermediário</a></td>
-                                <td><a href="dança-de-salão" class="danca_salao_int">Dança de Salão Iniciante</a></td>
-                                <td><a href="forro" class="forro_sert_inter">Forro &amp; Sertanejo Intermediário</a></td>
-                                <td></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <th>20h</th>
-                                <td><a href="zouk" class="zouk_inter">Zouk Intermediário</a></td>
-                                <td><a href="dança-de-salão" class="danca_salao">Dança de Salão Iniciado</a></td>
-                                <td><a href="zouk" class="zouk_inter">Zouk Intermediário</a></td>
-                                <td><a href="dança-de-salão" class="danca_salao">Dança de Salão Iniciado</a></td>
-                                <td></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <th>20h</th>
-                                <td><a href="dança-de-salão" class="danca_salao">Dança de Salão Iniciado</a></td>
-                                <td><a href="tango" class="tango_inter">Tango Intermediário</a></td>
-                                <td><a href="dança-de-salão" class="danca_salao">Dança de Salão Iniciado</a></td>
-                                <td><a href="tango" class="tango_inter">Tango Intermediário</a></td>
-                                <td></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <th>21h</th>
-                                <td><a href="forro" class="forro_samba">Forro &amp; Samba Iniciante</a></td>
-                                <td><a href="samba" class="samba_bole">Samba &amp; Bolero Intermediário</a></td>
-                                <td><a href="samba" class="forro_samba">Forro &amp; Samba Iniciante</a></td>
-                                <td><a href="samba" class="samba_bole">Samba &amp; Bolero Intermediário</a></td>
-                                <td></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <th>21h</th>
-                                <td><a href="samba" class="samba_inter">Samba Intermediário</a></td>
-                                <td><a href="bachata" class="bachata">Bachata Iniciado</a></td>
-                                <td><a href="samba" class="samba_inter">Samba Intermediário</a></td>
-                                <td><a href="bachata" class="bachata">Bachata Iniciado</a></td>
-                                <td></td>
-
-                            </tr>
-
-                            <tr>
-                                <th>21h</th>
-                                <td></td>
-                                <td><a href="samba" class="samba_zouk">Zouk &amp; Samba Iniciante</a></td>
-                                <td></td>
-                                <td><a href="zouk" class="samba_zouk">Zouk &amp; Samba Iniciante</a></td>
-                                <td></td>
-
-                            </tr>
-
+                                    
+                                  {% endfor %}
+                                </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                     </div>
@@ -223,42 +90,3 @@ title: Horários
             </div>
         </div>
     </section>
-
- 
-
-</div><!-- eof #box_wrapper -->
-
-        <!-- libraries -->
-        <script src="js/vendor/jquery-1.11.1.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/vendor/jquery.appear.js"></script>
-
-        <!-- superfish menu  -->
-        <script src="js/vendor/jquery.hoverIntent.js"></script>
-        <script src="js/vendor/superfish.js"></script>
-        
-        <!-- page scrolling -->
-        <script src="js/vendor/jquery.easing.1.3.js"></script>
-        <script src='js/vendor/jquery.nicescroll.min.js'></script>
-        <script src="js/vendor/jquery.ui.totop.js"></script>
-        <script src="js/vendor/jquery.localscroll-min.js"></script>
-        <script src="js/vendor/jquery.scrollTo-min.js"></script>
-        <script src='js/vendor/jquery.parallax-1.1.3.js'></script>
-
-        <!-- widgets -->
-        <script src="js/vendor/jquery.easypiechart.min.js"></script><!-- pie charts -->
-        <script src='js/vendor/jquery.countTo.js'></script><!-- digits counting -->
-        <script src="js/vendor/jquery.prettyPhoto.js"></script><!-- lightbox photos -->
-        <script src='js/vendor/jflickrfeed.min.js'></script><!-- flickr -->
-        <script src='twitter/jquery.tweet.min.js'></script><!-- twitter -->
-
-        <!-- sliders, filters, carousels -->
-        <script src="js/vendor/jquery.isotope.min.js"></script>
-        <script src='js/vendor/owl.carousel.min.js'></script>
-        <script src='js/vendor/jquery.fractionslider.min.js'></script>
-        <script src='js/vendor/jquery.flexslider-min.js'></script>
-        <script src='js/vendor/jquery.bxslider.min.js'></script>
-
-        <!-- custom scripts -->
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
