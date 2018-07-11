@@ -1,6 +1,6 @@
 
-- horario: 10h30
-  dancas:
+- schedule: 10h30
+  dances:
     - name: 
       class: 
       baseurl: 
@@ -20,8 +20,8 @@
       class2: danca-salao-int
       baseurl2: danca_de_salao
 
-- horario: 15h30
-  dancas:
+- schedule: 15h30
+  dances:
     - name: 
       class: 
       baseurl: 
@@ -38,8 +38,8 @@
       class: ioga
       baseurl: '#'
 
-- horario: 16h30
-  dancas:
+- schedule: 16h30
+  dances:
     - name: 
       class: 
       baseurl: 
@@ -56,8 +56,8 @@
       class: street-dance
       baseurl: '#'
 
-- horario: 17h30
-  dancas:
+- schedule: 17h30
+  dances:
     - name: 
       class: 
       baseurl: 
@@ -74,8 +74,8 @@
       class: 
       baseurl: 
 
-- horario: 18h00
-  dancas:
+- schedule: 18h00
+  dances:
     - name: 
       class: 
       baseurl: 
@@ -92,8 +92,8 @@
       class: 
       baseurl: 
 
-- horario: 19h00
-  dancas:
+- schedule: 19h00
+  dances:
     - name: Salsa &amp; Bachata Iniciante
       class: salsa-bachata
       baseurl: salsa
@@ -146,8 +146,8 @@
       class: 
       baseurl: 
 
-- horario: 20h00
-  dancas:
+- schedule: 20h00
+  dances:
     - name: Dança de Salão Iniciado
       class: danca-salao
       baseurl: danca_de_salao
@@ -188,8 +188,8 @@
       class: 
       baseurl: 
 
-- horario: 21h00
-  dancas:
+- schedule: 21h00
+  dances:
     - name: Samba Intermediário
       class: samba-inter
       baseurl: samba

@@ -50,31 +50,31 @@ title: Horários
                             </tr>
                         </thead>
                         <tbody>
-                            {% for entry in site.data.tabela_de_horarios %}
+                            {% for entry in site.data.schedule %}
                                 <tr>
-                                    <th>{{ entry.horario }}</th>
+                                    <th>{{ entry.schedule }}</th>
 
-                                  {% for danca in entry.dancas %}
+                                  {% for dance in entry.dances %}
                                     
                                         <td>
-                                            {% unless danca.name == null %}
-                                            <a href="{% unless danca.baseurl == '#' %}cursos/{% endunless %}{{ danca.baseurl }}" class="{{ danca.class }}">
-                                                {{ danca.name }}
+                                            {% unless dance.name == null %}
+                                            <a href="{% unless dance.baseurl == '#' %}cursos/{% endunless %}{{ dance.baseurl }}" class="{{ dance.class }}">
+                                                {{ dance.name }}
                                             </a>
                                             {% endunless %}
-                                            {% if danca.name2 %}
-                                                <a href="{% unless danca.baseurl2 == '#' %}cursos/{% endunless %}{{ danca.baseurl2 }}" class="{{ danca.class2 }}">
-                                                {{ danca.name2 }}
+                                            {% if dance.name2 %}
+                                                <a href="{% unless dance.baseurl2 == '#' %}cursos/{% endunless %}{{ dance.baseurl2 }}" class="{{ dance.class2 }}">
+                                                {{ dance.name2 }}
                                                 </a>
                                             {% endif %}
-                                            {% if danca.name3 %}
-                                                <a href="{% unless danca.baseurl3 == '#' %}cursos/{% endunless %}{{ danca.baseurl3 }}" class="{{ danca.class3 }}">
-                                                    {{ danca.name3 }}
+                                            {% if dance.name3 %}
+                                                <a href="{% unless dance.baseurl3 == '#' %}cursos/{% endunless %}{{ dance.baseurl3 }}" class="{{ dance.class3 }}">
+                                                    {{ dance.name3 }}
                                                 </a>
                                             {% endif %}
-                                            {% if danca.name4 %}
-                                                <a href="{% unless danca.baseurl4 == '#' %}cursos/{% endunless %}{{ danca.baseurl4 }}" class="{{ danca.class4 }}">
-                                                    {{ danca.name4 }}
+                                            {% if dance.name4 %}
+                                                <a href="{% unless dance.baseurl4 == '#' %}cursos/{% endunless %}{{ dance.baseurl4 }}" class="{{ dance.class4 }}">
+                                                    {{ dance.name4 }}
                                                 </a>
                                             {% endif %}
                                         </td>
