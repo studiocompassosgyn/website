@@ -1,24 +1,47 @@
 
 - schedule: 10h30
   dances:
-    - name: 
+    - day: Segunda
+      name: 
       class: 
       baseurl: 
-    - name: 
+    - day: Terça
+      name: 
       class: 
       baseurl: 
-    - name: 
+    - day: Quarta
+      name: 
       class: 
       baseurl: 
-    - name: 
+    - day: Quinta
+      name: 
       class: 
       baseurl: 
-    - name: Ballet Adulto
+    - day: Sábado
+      name: Ballet Adulto
       class: ballet-adulto
       baseurl: '#'
       name2: Dança de Salão Iniciante
       class2: danca-salao-int
       baseurl2: danca_de_salao
+
+- schedule: 15h00
+  dances:
+    - name: 
+      class: 
+      baseurl: 
+    - name: 
+      class: 
+      baseurl: 
+    - name: 
+      class: 
+      baseurl: 
+    - name: 
+      class: 
+      baseurl: 
+    - name: Dança de Salão Iniciado
+      class: danca-salao
+      baseurl: danca_de_salao
 
 - schedule: 15h30
   dances:
@@ -52,9 +75,9 @@
     - name: 
       class: 
       baseurl: 
-    - name: Street Dance
-      class: street-dance
-      baseurl: '#'
+    - name: Zouk Iniciante
+      class: zouk-ini
+      baseurl: zouk
 
 - schedule: 17h30
   dances:
@@ -94,99 +117,84 @@
 
 - schedule: 19h00
   dances:
-    - name: Salsa &amp; Bachata Iniciante
-      class: salsa-bachata
-      baseurl: salsa
-      name2: Zouk Iniciado
-      class2: zouk
-      baseurl2: zouk
-      name3: Dança de Salão Iniciado
-      class3: danca-salao
-      baseurl3: danca_de_salao
-      name4: Street Dance
-      class4: street-dance
-      baseurl4: '#'
-    - name: Dança de Salão Iniciante
-      class: danca-salao-int
+    - name: Tango Iniciado
+      class: tango-int
+      baseurl: tango
+      name2: Dança de Salão Iniciante
+      class2: danca-salao-int
+      baseurl2: danca_de_salao
+      name3: Salsa &amp; Bachata Iniciante
+      class3: salsa-bachata
+      baseurl3: salsa
+    - name: Dança de Salão Intermediário
+      class: danca-salao-inter
       baseurl: danca_de_salao
-      name2: Salsa em linha Iniciante
-      class2: salsa-linha
-      baseurl2: salsa
-      name3: Dança de Salão Iniciante
-      class3: danca-salao-int
-      baseurl3: danca_de_salao
-      name4: Ioga
-      class4: ioga
-      baseurl4: '#'
-    - name: Salsa &amp; Bachata Iniciante
-      class: salsa-bachata
-      baseurl: salsa
-      name2: Zouk Iniciado
-      class2: zouk
-      baseurl2: zouk
-      name3: Dança de Salão Iniciado
-      class3: danca-salao
-      baseurl3: danca_de_salao
-      name4: Street Dance
-      class4: street-dance
-      baseurl4: '#'
-    - name: Dança de Salão Iniciante
-      class: danca-salao-int
+      name2: Forro &amp; Sertanejo Iniciante
+      class2: forro-sert-ini
+      baseurl2: forro
+    - name: Tango Iniciado
+      class: tango-int
+      baseurl: tango
+      name2: Dança de Salão Iniciante
+      class2: danca-salao-int
+      baseurl2: danca_de_salao
+      name3: Salsa &amp; Bachata Iniciante
+      class3: salsa-bachata
+      baseurl3: salsa
+    - name: Dança de Salão Intermediário
+      class: danca-salao-inter
       baseurl: danca_de_salao
-      name2: Salsa em linha Iniciante
-      class2: salsa-linha
-      baseurl2: salsa
-      name3: Forró Iniciante
-      class3: forro-int
-      baseurl3: forro
-      nam4e: Ioga
-      class4: ioga
-      baseurl4: '#'
+      name2: Forro &amp; Sertanejo Iniciante
+      class2: forro-sert-ini
+      baseurl2: forro
     - name: 
       class: 
       baseurl: 
 
 - schedule: 20h00
   dances:
-    - name: Dança de Salão Iniciado
-      class: danca-salao
-      baseurl: danca_de_salao
+    - name: Zouk Iniciante
+      class: zouk-ini
+      baseurl: zouk
       name2: Zouk Intermediário
       class2: zouk-inter
       baseurl2: zouk
-      name3: Dança de Salão Iniciante
-      class3: danca-salao-int
-      baseurl3: danca_de_salao
-    - name: Tango Intermediário
-      class: tango-inter
-      baseurl: tango
-      name2: Dança de Salão Iniciado
-      class2: danca-salao
+    - name: Zouk Iniciante
+      class: zouk-ini
+      baseurl: zouk
+      name2: Dança de Salão Iniciante
+      class2: danca-salao-int
       baseurl2: danca_de_salao
-      name3: Forro &amp; Sertanejo Intermediário
-      class3: forro-sert-inter
-      baseurl3: forro
-    - name: Dança de Salão Iniciado
-      class: danca-salao
-      baseurl: danca_de_salao
+      name3: Fitdance
+      class3: fitdance
+      baseurl3: "#"
+      name4: Samba Iniciante
+      class4: samba
+      baseurl4: samba 
+    - name: Zouk Iniciante
+      class: zouk-ini
+      baseurl: zouk
       name2: Zouk Intermediário
       class2: zouk-inter
       baseurl2: zouk
-      name3: Dança de Salão Iniciante
-      class3: danca-salao-int
-      baseurl3: danca_de_salao
-    - name: Tango Intermediário
-      class: tango-inter
-      baseurl: tango
-      name2: Dança de Salão Iniciado
-      class2: danca-salao
+    - name: Zouk Iniciante
+      class: zouk-ini
+      baseurl: zouk
+      name2: Dança de Salão Iniciante
+      class2: danca-salao-int
       baseurl2: danca_de_salao
-      name3: Forro &amp; Sertanejo Intermediário
-      class3: forro-sert-inter
-      baseurl3: forro
+      name3: Fitdance
+      class3: fitdance
+      baseurl3: "#"
+      name4: Samba Iniciante
+      class4: samba
+      baseurl4: samba 
     - name: 
       class: 
       baseurl: 
+      name2: Dança de Salão Iniciado
+      class2: danca-salao
+      baseurl2: danca_de_salao
 
 - schedule: 21h00
   dances:
