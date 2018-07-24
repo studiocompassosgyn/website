@@ -1,30 +1,4 @@
 
-- schedule: 10h30
-  dances:
-    - day: Segunda
-      name: 
-      class: 
-      baseurl: 
-    - day: Terça
-      name: 
-      class: 
-      baseurl: 
-    - day: Quarta
-      name: 
-      class: 
-      baseurl: 
-    - day: Quinta
-      name: 
-      class: 
-      baseurl: 
-    - day: Sábado
-      name: Ballet Adulto
-      class: ballet-adulto
-      baseurl: '#'
-      name2: Dança de Salão Iniciante
-      class2: danca-salao-int
-      baseurl2: danca_de_salao
-
 - schedule: 15h00
   dances:
     - name: 
@@ -43,24 +17,6 @@
       class: danca-salao
       baseurl: danca_de_salao
 
-- schedule: 15h30
-  dances:
-    - name: 
-      class: 
-      baseurl: 
-    - name: 
-      class: 
-      baseurl: 
-    - name: 
-      class: 
-      baseurl: 
-    - name: 
-      class: 
-      baseurl: 
-    - name: Ioga
-      class: ioga
-      baseurl: '#'
-
 - schedule: 16h30
   dances:
     - name: 
@@ -78,42 +34,6 @@
     - name: Zouk Iniciante
       class: zouk-ini
       baseurl: zouk
-
-- schedule: 17h30
-  dances:
-    - name: 
-      class: 
-      baseurl: 
-    - name: Ioga
-      class: ioga
-      baseurl: '#' 
-    - name: 
-      class: 
-      baseurl: 
-    - name: Ioga
-      class: ioga
-      baseurl: '#'
-    - name: 
-      class: 
-      baseurl: 
-
-- schedule: 18h00
-  dances:
-    - name: 
-      class: 
-      baseurl: 
-    - name: Zumba
-      class: zumba
-      baseurl: '#'
-    - name: 
-      class: 
-      baseurl: 
-    - name: Zumba
-      class: zumba
-      baseurl: '#'
-    - name: 
-      class: 
-      baseurl: 
 
 - schedule: 19h00
   dances:
