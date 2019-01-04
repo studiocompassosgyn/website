@@ -1,153 +1,222 @@
 
-- schedule: 15h00
+- schedule: 15h30
   dances:
-    - name: 
-      class: 
-      baseurl: 
-    - name: 
-      class: 
-      baseurl: 
-    - name: 
-      class: 
-      baseurl: 
-    - name: 
-      class: 
-      baseurl: 
-    - name: Dança de Salão Iniciado
-      class: danca-salao
-      baseurl: danca_de_salao
+    - name: Baby Class
+      class: baby-class
+      baseurl:
+    - name: Ballet Grau II
+      class: ballet-grau-ii
+      baseurl:
+    - name: Baby Class
+      class: baby-class
+      baseurl:
+    - name: Ballet Grau II
+      class: ballet-grau-ii
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+
+- schedule: 16h00
+  dances:
+    - name:
+      class:
+      baseurl:
+    - name: Ballet Grau I
+      class: ballet-grau-i
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name: Ballet Grau I
+      class: ballet-grau-i
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
 
 - schedule: 16h30
   dances:
-    - name: 
-      class: 
-      baseurl: 
-    - name: 
-      class: 
-      baseurl: 
-    - name: 
-      class: 
-      baseurl: 
-    - name: 
-      class: 
-      baseurl: 
-    - name: Zouk Iniciante
-      class: zouk-ini
-      baseurl: zouk
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name: Street Dance
+      class: street-dance
+      baseurl:
+
+- schedule: 17h00
+  dances:
+    - name: Ballet Grau II
+      class: ballet-grau-ii
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name: Ballet Grau II
+      class: ballet-grau-ii
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+
+- schedule: 18h00
+  dances:
+    - name: Baby Class
+      class: baby-class
+      baseurl:
+    - name: Jazz Juvenil
+      class: jazz-juvenil
+      baseurl:
+    - name: Baby Class
+      class: baby-class
+      baseurl:
+    - name: Jazz Juvenil
+      class: jazz-juvenil
+      baseurl:
+    - name: Ballet Adulto
+      class: ballet-adulto
+      baseurl:
+    - name:
+      class:
+      baseurl:
 
 - schedule: 19h00
   dances:
-    - name: Tango Iniciado
-      class: tango-int
-      baseurl: tango
-      name2: Dança de Salão Iniciante
+    - name: Forro &amp; Sertanejo Iniciante
+      class: forro-sert-int
+      baseurl: forro
+      name2: Ballet Adulto
+      class2: ballet-adulto
+      baseurl2:
+    - name: Ballet Fitness
+      class: ballet-fitness
+      baseurl:
+      name2: Dança de Salão Intermediário
       class2: danca-salao-int
       baseurl2: danca_de_salao
-      name3: Salsa &amp; Bachata Iniciante
-      class3: salsa-bachata
-      baseurl3: salsa
-    - name: Dança de Salão Intermediário
-      class: danca-salao-inter
-      baseurl: danca_de_salao
-      name2: Forro &amp; Sertanejo Iniciante
-      class2: forro-sert-ini
-      baseurl2: forro
-    - name: Tango Iniciado
-      class: tango-int
-      baseurl: tango
-      name2: Dança de Salão Iniciante
+    - name: Forro &amp; Sertanejo Iniciante
+      class: forro-sert-int
+      baseurl: forro
+      name2: Ballet Adulto
+      class2: ballet-adulto
+      baseurl2:
+    - name: Ballet Fitness
+      class: ballet-fitness
+      baseurl:
+      name2: Dança de Salão Intermediário
       class2: danca-salao-int
       baseurl2: danca_de_salao
-      name3: Salsa &amp; Bachata Iniciante
-      class3: salsa-bachata
-      baseurl3: salsa
-    - name: Dança de Salão Intermediário
-      class: danca-salao-inter
-      baseurl: danca_de_salao
-      name2: Forro &amp; Sertanejo Iniciante
-      class2: forro-sert-ini
-      baseurl2: forro
-    - name: 
-      class: 
-      baseurl: 
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+
+- schedule: 19h30
+  dances:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name: Contemporâneo
+      class: contemporaneo
+      baseurl:
+    - name:
+      class:
+      baseurl:
 
 - schedule: 20h00
   dances:
-    - name: Zouk Iniciante
-      class: zouk-ini
+    - name: Zouk Intermediário
+      class: zouk-inter
       baseurl: zouk
-      name2: Zouk Intermediário
-      class2: zouk-inter
-      baseurl2: zouk
-    - name: Zouk Iniciante
-      class: zouk-ini
+    - name: Dança de Salão Intermediário
+      class: danca-salao-int
+      baseurl: danca_de_salao
+    - name: Zouk Intermediário
+      class: zouk-inter
       baseurl: zouk
-      name2: Dança de Salão Iniciante
-      class2: danca-salao-int
-      baseurl2: danca_de_salao
-      name3: Fitdance
-      class3: fitdance
-      baseurl3: "#"
-      name4: Samba Iniciante
-      class4: samba
-      baseurl4: samba 
-    - name: Zouk Iniciante
-      class: zouk-ini
-      baseurl: zouk
-      name2: Zouk Intermediário
-      class2: zouk-inter
-      baseurl2: zouk
-    - name: Zouk Iniciante
-      class: zouk-ini
-      baseurl: zouk
-      name2: Dança de Salão Iniciante
-      class2: danca-salao-int
-      baseurl2: danca_de_salao
-      name3: Fitdance
-      class3: fitdance
-      baseurl3: "#"
-      name4: Samba Iniciante
-      class4: samba
-      baseurl4: samba 
-    - name: 
-      class: 
-      baseurl: 
-      name2: Dança de Salão Iniciado
-      class2: danca-salao
-      baseurl2: danca_de_salao
+    - name: Dança de Salão Intermediário
+      class: danca-salao-int
+      baseurl: danca_de_salao
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
 
-- schedule: 21h00
+- schedule: 20h15
   dances:
-    - name: Samba Intermediário
-      class: samba-inter
-      baseurl: samba
-      name2: Forro &amp; Samba Iniciante
-      class2: forro-samba
-      baseurl2: forro 
-    - name: Zouk &amp; Samba Iniciante
-      class: samba-zouk
-      baseurl: samba
-      name2: Bachata Iniciado
-      class2: bachata
-      baseurl2: bachata
-      name3: Samba &amp; Bolero Intermediário
-      class3: samba-bole
-      baseurl3: samba
-    - name: Samba Intermediário
-      class: samba-inter
-      baseurl: samba
-      name2: Forro &amp; Samba Iniciante
-      class2: forro-samba
-      baseurl2: samba
-    - name: Zouk &amp; Samba Iniciante
-      class: samba-zouk
-      baseurl: zouk
-      name2: Bachata Iniciado
-      class2: bachata
-      baseurl2: bachata
-      name3: Samba &amp; Bolero Intermediário
-      class3: samba_bole
-      baseurl3: samba
-    - name: 
-      class: 
-      baseurl: 
+    - name:
+      class:
+      baseurl:
+    - name: Fitdance
+      class: Fitdance
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name: Fitdance
+      class: Fitdance
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+
+- schedule: 20h30
+  dances:
+    - name: Jazz Adulto
+      class: jazz-adulto
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name: Jazz Adulto
+      class: jazz-adulto
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
+    - name:
+      class:
+      baseurl:
